@@ -199,25 +199,31 @@
       </div>
     </nav>
     <!-- thông tin wed -->
-
     <section class="slide-home home">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-12 site-title">
-            <h3 class="title-text title-text1">Hey bro</h3>
-            <div class="box-note">
-              <h1 class="note-title title-text text-uppercase">học cùng tôi</h1>
+          <div class="col-lg-6 col-md-6 col-12 slide-home__title">
+            <h3 class="slide-home__title-text slide-home__title-text--1">
+              Hey bro
+            </h3>
+            <div class="slide-home__box-note">
+              <h1
+                class="slide-home__note-title slide-home__title-text text-uppercase"
+              >
+                học cùng tôi
+              </h1>
             </div>
-
-            <h3 class="title-text text-uppercase title-text2">
+            <h3
+              class="slide-home__title-text text-uppercase slide-home__title-text--2"
+            >
               tham gia ngay nào
             </h3>
-            <div class="button-home">
+            <div class="slide-home__button-home">
               <form class="d-flex">
                 <a href="#">
                   <button
                     type="button"
-                    class="btn btn-primary me-5 text-uppercase"
+                    class="btn btn-primary me-5 text-uppercase slide-home__btn"
                     id="js-dk"
                   >
                     Đăng Ký
@@ -226,7 +232,7 @@
                 <a href="#">
                   <button
                     type="button"
-                    class="btn btn-primary text-uppercase"
+                    class="btn btn-primary text-uppercase slide-home__btn"
                     id="js-dn"
                   >
                     đăng nhập
@@ -235,19 +241,19 @@
               </form>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-12 banner-image">
+          <div class="col-lg-6 col-md-6 col-12 slide-home__banner">
             <div>
               <img
-                class="img-home"
+                class="slide-home__img img-fluid"
                 src="img/banner-image.png"
                 alt="banner-img"
-                class="img-fluid"
               />
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- logo đẹp -->
     <div class="language animate__zoomInDown animate__animated">
       <div class="container mt-2">
@@ -291,8 +297,8 @@
         </div>
       </div>
     </div>
-
     <div class="line1"></div>
+    <!-- giới thiệu -->
     <!-- giới thiệu -->
     <section class="infor-teacher">
       <div class="container">
@@ -312,7 +318,7 @@
           </h1>
         </div>
         <h2
-          class="mb-4"
+          class="infor-teacher__title infor-teacher__title--mb-4"
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
           data-aos-duration="2000"
@@ -320,6 +326,7 @@
           hệ thống giáo dục với xứ mệnh to lớn
         </h2>
         <p
+          class="infor-teacher__description"
           data-aos-duration="1000"
           data-aos-mirror="true"
           data-aos="flip-right"
@@ -337,112 +344,118 @@
         </p>
       </div>
       <div class="container">
-        <div class="row">
+        <div class="row d-flex justify-content-around">
           <div
-            class="col-lg-4 col-md-4 col-sm-12 col-12"
+            class="infor-teacher__member col-lg-3 col-md-3 col-sm-12 col-12"
             data-aos="zoom-in"
             data-aos-duration="2000"
           >
-            <div class="team-item">
-              <div class="team-img">
-                <div class="team-img-teacher">
-                  <img src="img/teacher1.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="team-icon">
+            <div class="infor-teacher__member-item">
+              <div class="infor-teacher__member-img-wrapper">
+                <img
+                  src="img/teacher1.jpg"
+                  class="infor-teacher__member-img img-fluid"
+                  alt=""
+                />
+                <div class="infor-teacher__member-social-icons">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"> <i class="fab fa-twitter"></i></a>
                   <a href="#"> <i class="fab fa-instagram"></i></a>
                   <a href="#"> <i class="fab fa-linkedin-in"></i></a>
                 </div>
               </div>
-              <div class="team-content">
-                <h5>Skick Mesi</h5>
-                <p>CEO</p>
+              <div class="infor-teacher__member-info">
+                <h5 class="infor-teacher__member-name">Skick Mesi</h5>
+                <p class="infor-teacher__member-position">CEO</p>
               </div>
             </div>
           </div>
+
           <div
-            class="col-lg-4 col-md-4 col-sm-12 col-12"
+            class="infor-teacher__member col-lg-3 col-md-3 col-sm-12 col-12 d-flex justify-content-center"
             data-aos="zoom-in"
             data-aos-duration="2000"
           >
-            <div class="team-item">
-              <div class="team-img">
-                <div class="team-img-teacher">
-                  <img src="img/teacher2.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="team-icon">
+            <div class="infor-teacher__member-item">
+              <div class="infor-teacher__member-img-wrapper">
+                <img
+                  src="img/teacher2.jpg"
+                  class="infor-teacher__member-img img-fluid"
+                  alt=""
+                />
+                <div class="infor-teacher__member-social-icons">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"> <i class="fab fa-twitter"></i></a>
                   <a href="#"> <i class="fab fa-instagram"></i></a>
                   <a href="#"> <i class="fab fa-linkedin-in"></i></a>
                 </div>
               </div>
-              <div class="team-content">
-                <h5>Johne Nguyễn</h5>
-                <p>Chủ tịch Code Club</p>
+              <div class="infor-teacher__member-info">
+                <h5 class="infor-teacher__member-name">Johne Nguyễn</h5>
+                <p class="infor-teacher__member-position">Chủ tịch Code Club</p>
               </div>
             </div>
           </div>
+
           <div
-            class="col-lg-4 col-md-4 col-sm-12 col-12"
+            class="infor-teacher__member col-lg-3 col-md-3 col-sm-12 col-12 d-flex justify-content-center"
             data-aos="zoom-in"
             data-aos-duration="2000"
           >
-            <div class="team-item">
-              <div class="team-img">
-                <div class="team-img-teacher">
-                  <img src="img/teacher3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="team-icon">
+            <div class="infor-teacher__member-item">
+              <div class="infor-teacher__member-img-wrapper">
+                <img
+                  src="img/teacher3.jpg"
+                  class="infor-teacher__member-img img-fluid"
+                  alt=""
+                />
+                <div class="infor-teacher__member-social-icons">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"> <i class="fab fa-twitter"></i></a>
                   <a href="#"> <i class="fab fa-instagram"></i></a>
                   <a href="#"> <i class="fab fa-linkedin-in"></i></a>
                 </div>
               </div>
-              <div class="team-content">
-                <h5>Sơn Đặng</h5>
-                <p>Đồng Sáng Lập Code Club</p>
+              <div class="infor-teacher__member-info">
+                <h5 class="infor-teacher__member-name">Sơn Đặng</h5>
+                <p class="infor-teacher__member-position">
+                  Đồng Sáng Lập Code Club
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- lập trình là gì ? -->
+
+    <!-- Lập trình là gì ? -->
     <section class="dev">
-      <!-- <h1>Lập trình là xu thế của tương lai</h1> -->
       <div class="container">
         <div class="container-title mt-5 mb-5">
-          <h1 class="title note-title pt-2">lập trình ?</h1>
+          <h1 class="dev__title title note-title pt-2">Lập trình ?</h1>
         </div>
-        <div class="dev">
+        <div class="dev__content">
           <div class="row">
             <div
-              class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 dev-img"
+              class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 dev__image"
               data-aos="zoom-out-right"
               data-aos-mirror="true"
               data-aos-duration="500"
             >
-              <img class="small1" src="img/ltv2.png" alt="" />
+              <img class="dev__image-small" src="img/ltv2.png" alt="" />
             </div>
             <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-              <div class="frame-dev-title">
-                <img class="small3" src="img/s3.png" alt="" />
-
-                <img class="small2" src="img/s4.png" alt="" />
-                <img class="small6" src="img/s6.png" alt="" />
-
-                <img class="small7" src="img/s11.png" alt="" />
-
+              <div class="dev__frame-title">
+                <img class="dev__image-small--3" src="img/s3.png" alt="" />
+                <img class="dev__image-small--2" src="img/s4.png" alt="" />
+                <img class="dev__image-small--6" src="img/s6.png" alt="" />
+                <img class="dev__image-small--7" src="img/s11.png" alt="" />
                 <div
-                  class="div-title"
                   data-aos="fade-left"
                   data-aos-offset="200"
                   data-aos-duration="1000"
                 >
-                  <h2 class="">
+                  <h2 class="dev__subtitle">
                     <i
                       class="fa-solid fa-brain fa-lg"
                       style="color: #0091ff"
@@ -455,12 +468,11 @@
                   </p>
                 </div>
                 <div
-                  class="div-title"
                   data-aos="fade-left"
                   data-aos-offset="200"
                   data-aos-duration="1000"
                 >
-                  <h2>
+                  <h2 class="dev__subtitle">
                     <i
                       class="fa-solid fa-laptop-code fa-lg"
                       style="color: #0091ff"
@@ -473,12 +485,11 @@
                   </p>
                 </div>
                 <div
-                  class="div-title"
                   data-aos="fade-left"
                   data-aos-offset="200"
                   data-aos-duration="1000"
                 >
-                  <h2>
+                  <h2 class="dev__subtitle">
                     <i
                       class="fa-regular fa-handshake fa-lg"
                       style="color: #0091ff"
@@ -493,22 +504,21 @@
               </div>
             </div>
           </div>
-          <!-- đoạn 2 -->
+          <!-- Đoạn 2 -->
           <div class="row">
             <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-              <div class="frame-dev-title">
-                <img class="small4" src="img/s5.png" alt="" />
-                <img class="small8" src="img/s1.png" alt="" />
-                <img class="small11" src="img/s2.png" alt="" />
-                <img class="small10" src="img/s10.png" alt="" />
-                <img class="small9" src="img/s9.png" alt="" />
+              <div class="dev__frame-title">
+                <img class="dev__image-small--4" src="img/s5.png" alt="" />
+                <img class="dev__image-small--8" src="img/s1.png" alt="" />
+                <img class="dev__image-small--11" src="img/s2.png" alt="" />
+                <img class="dev__image-small--10" src="img/s10.png" alt="" />
+                <img class="dev__image-small--9" src="img/s9.png" alt="" />
                 <div
-                  class="div-title"
                   data-aos="fade-right"
                   data-aos-offset="200"
                   data-aos-duration="1000"
                 >
-                  <h2 class="">
+                  <h2 class="dev__subtitle">
                     <i
                       class="fa-solid fa-notes-medical fa-lg"
                       style="color: #f24545"
@@ -522,12 +532,11 @@
                   </p>
                 </div>
                 <div
-                  class="div-title"
                   data-aos="fade-right"
                   data-aos-offset="200"
                   data-aos-duration="1000"
                 >
-                  <h2>
+                  <h2 class="dev__subtitle">
                     <i
                       class="fa-solid fa-person-walking-dashed-line-arrow-right fa-lg"
                       style="color: #f24545"
@@ -541,12 +550,11 @@
                   </p>
                 </div>
                 <div
-                  class="div-title"
                   data-aos="fade-right"
                   data-aos-offset="200"
                   data-aos-duration="1000"
                 >
-                  <h2>
+                  <h2 class="dev__subtitle">
                     <i
                       class="fa-solid fa-microchip fa-lg"
                       style="color: #f24545"
@@ -562,22 +570,22 @@
               </div>
             </div>
             <div
-              class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 dev-img"
+              class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 dev__image"
               data-aos="zoom-out-left"
               data-aos-mirror="true"
               data-aos-duration="500"
             >
-              <img class="small1" src="img/ltv.png" alt="" />
+              <img class="dev__image-small" src="img/ltv.png" alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- end thông tin lập trình -->
-    <section class="lotrinh mt-5">
+    <!-- lộ trình học -->
+    <section class="learning-path mt-5">
       <div class="container">
-        <h2>
+        <h2 class="learning-path__title">
           <i
             class="fa-solid fa-right-long fa-shake fa-xl"
             style="color: #11ff00"
@@ -590,14 +598,17 @@
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
           >
-            <div class="box-lt m-3">
-              <p class="num">1</p>
-              <div class="card card-lt">
+            <div class="learning-path__box m-3">
+              <p class="learning-path__num">1</p>
+              <div class="card learning-path__card">
                 <img src="img/hoc-lap-trinh.png" alt="" class="card-img-top" />
-
-                <div class="card-body b1">
-                  <h3 class="card-title">Học lập trình</h3>
-                  <p class="card-text">
+                <div
+                  class="card-body learning-path__card-body learning-path__card-body--1"
+                >
+                  <h3 class="card-title learning-path__card-title">
+                    Học lập trình
+                  </h3>
+                  <p class="card-text learning-path__card-text">
                     Học lập trình cơ bản đến nâng cao thông qua các khóa học.
                   </p>
                 </div>
@@ -610,18 +621,21 @@
             data-aos-anchor-placement="center-bottom"
             data-aos-delay="200"
           >
-            <div class="box-lt m-3">
-              <p class="num">2</p>
-              <div class="card card-lt">
+            <div class="learning-path__box m-3">
+              <p class="learning-path__num">2</p>
+              <div class="card learning-path__card">
                 <img
                   src="img/luyen-lap-trinh.png"
                   alt=""
                   class="card-img-top"
                 />
-
-                <div class="card-body b2">
-                  <h3 class="card-title">Luyện lập trình</h3>
-                  <p class="card-text">
+                <div
+                  class="card-body learning-path__card-body learning-path__card-body--2"
+                >
+                  <h3 class="card-title learning-path__card-title">
+                    Luyện lập trình
+                  </h3>
+                  <p class="card-text learning-path__card-text">
                     Luyện lập trình hằng ngày với hàng nghìn bài tập lớn nhỏ
                     khác nhau.
                   </p>
@@ -635,14 +649,17 @@
             data-aos-anchor-placement="center-bottom"
             data-aos-delay="400"
           >
-            <div class="box-lt m-3">
-              <p class="num">3</p>
-              <div class="card card-lt">
+            <div class="learning-path__box m-3">
+              <p class="learning-path__num">3</p>
+              <div class="card learning-path__card">
                 <img src="img/thi-lap-trinh.png" alt="" class="card-img-top" />
-
-                <div class="card-body b3">
-                  <h3 class="card-title">Thi lập trình</h3>
-                  <p class="card-text">
+                <div
+                  class="card-body learning-path__card-body learning-path__card-body--3"
+                >
+                  <h3 class="card-title learning-path__card-title">
+                    Thi lập trình
+                  </h3>
+                  <p class="card-text learning-path__card-text">
                     Tham gia các cuộc thi và cải thiện kỹ năng lập trình liên
                     tục.
                   </p>
@@ -656,18 +673,21 @@
             data-aos-anchor-placement="center-bottom"
             data-aos-delay="600"
           >
-            <div class="box-lt m-3">
-              <p class="num">4</p>
-              <div class="card card-lt">
+            <div class="learning-path__box m-3">
+              <p class="learning-path__num">4</p>
+              <div class="card learning-path__card">
                 <img
                   src="img/chia-se-lap-trinh.png"
                   alt=""
                   class="card-img-top"
                 />
-
-                <div class="card-body b4">
-                  <h3 class="card-title">Hiểu chuyên sâu</h3>
-                  <p class="card-text">
+                <div
+                  class="card-body learning-path__card-body learning-path__card-body--4"
+                >
+                  <h3 class="card-title learning-path__card-title">
+                    Hiểu chuyên sâu
+                  </h3>
+                  <p class="card-text learning-path__card-text">
                     Tìm hiểu kiến thức lập trình chuyên thông qua chia sẻ từ các
                     chuyên gia và thực chiến.
                   </p>
@@ -684,60 +704,45 @@
         <h1 class="title note-title pt-2">KHÓA HỌC</h1>
       </div>
       <!-- tìm kiếm khóa học -->
-
       <div class="card-group container">
-        <img src="img/bgr.png" class="course-bgr" />
+        <img src="img/bgr.png" class="course__bgr" />
         <div class="not-hover ps-2 pe-2">
-          <div class="row">
-            <!-- cột -->
-
+          <div class="row g-5">
             <div
               class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos="flip-right"
             >
-              <div class="wrapper">
-                <div class="pin-hot pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--hot">
                   <p>Xu Hướng</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__image">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/cnew.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">C++</h3>
+                  <div class="card-body course__body">
+                    <h3 class="card-title course__title">C++</h3>
 
-                    <div class="value">
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 50 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i class="fa-solid fa-star fa-" style="color: #ffe100">
-                        </i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
 
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -758,48 +763,34 @@
               data-aos-mirror="true"
               data-aos="flip-right"
             >
-              <div class="wrapper">
-                <div class="pin-new pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--new">
                   <p>Mới Nhất</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__image">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/Bootstrap.jpg"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">BOOTSTRAP</h3>
+                  <div class="card-body course__body">
+                    <h3 class="card-title course__title">BOOTSTRAP</h3>
 
-                    <div class="value">
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 100 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
                       </p>
                     </div>
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -820,45 +811,31 @@
               data-aos-mirror="true"
               data-aos="flip-right"
             >
-              <div class="wrapper">
-                <div class="cards">
-                  <div class="CardImgKh">
+              <div class="course__wrapper">
+                <div class="course__card">
+                  <div class="course__image">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/html-css.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">HTML/CSS</h3>
+                  <div class="card-body course__body">
+                    <h3 class="card-title course__title">HTML/CSS</h3>
 
-                    <div class="value">
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 234 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -879,49 +856,35 @@
               data-aos-mirror="true"
               data-aos="flip-right"
             >
-              <div class="wrapper">
-                <div class="pin-hot pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--hot">
                   <p>Xu Hướng</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__image">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/java.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">JAVA</h3>
+                  <div class="card-body course__body">
+                    <h3 class="card-title course__title">JAVA</h3>
 
-                    <div class="value">
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
 
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -940,53 +903,40 @@
         </div>
         <!-- row 2 -->
         <div class="not-hover ps-2 pe-2">
-          <div class="row">
+          <div class="row g-5">
             <div
               class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos="flip-up"
             >
-              <div class="wrapper">
-                <div class="pin-new pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--new">
                   <p>Mới Nhất</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/anngularjs.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">ANGULAR</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="card-title course__title">ANGULAR</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i class="fa-solid fa-star fa-" style="color: #ffe100">
-                        </i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1007,48 +957,33 @@
               data-aos-mirror="true"
               data-aos="flip-up"
             >
-              <div class="wrapper">
-                <div class="pin-trend pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--trend">
                   <p>Nổi Bật</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/vuejs.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">VUE JS</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="card-title course__title">VUE JS</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 100 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffffff"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffffff"></i>
                       </p>
                     </div>
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1069,48 +1004,33 @@
               data-aos-mirror="true"
               data-aos="flip-up"
             >
-              <div class="wrapper">
-                <div class="pin-hot pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--hot">
                   <p>Xu Hướng</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/nestjs.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">NEST JS</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="card-title course__title">NEST JS</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 120 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffffff"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffffff"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1131,49 +1051,33 @@
               data-aos-mirror="true"
               data-aos="flip-up"
             >
-              <div class="wrapper">
-                <div class="pin-trend pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--trend">
                   <p>Nổi Bật</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/typescript.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">TYPESCRIPT</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="card-title course__title">TYPESCRIPT</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
-
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1192,54 +1096,40 @@
         </div>
         <!-- row 3   -->
         <div class="not-hover ps-2 pe-2">
-          <div class="row">
+          <div class="row g-5">
             <div
               class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos="flip-right"
             >
-              <div class="wrapper">
-                <div class="pin-hot pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--hot">
                   <p>Xu Hướng</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/pythonps.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">PYTHON</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="course__title">PYTHON</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i class="fa-solid fa-star fa-" style="color: #ffe100">
-                        </i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
-
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1254,55 +1144,40 @@
                 </div>
               </div>
             </div>
+
             <div
               class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos="flip-right"
             >
-              <div class="wrapper">
-                <div class="pin-new pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--new">
                   <p>Mới Nhất</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/unity.jpg"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">UNITY</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="course__title">UNITY</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 100 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
                       </p>
                     </div>
-
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1317,52 +1192,37 @@
                 </div>
               </div>
             </div>
+
             <div
               class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos="flip-right"
             >
-              <div class="wrapper">
-                <div class="cards">
-                  <div class="CardImgKh">
+              <div class="course__wrapper">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/dotnet.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">.NET</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="course__title">.NET</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 120 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffffff"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffffff"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
-
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1377,55 +1237,40 @@
                 </div>
               </div>
             </div>
+
             <div
               class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos="flip-right"
             >
-              <div class="wrapper">
-                <div class="pin-new pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--new">
                   <p>Mới Nhất</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/swift.jpg"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">SWIFT</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="course__title">SWIFT</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 99 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
-
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1442,58 +1287,43 @@
             </div>
           </div>
         </div>
+
         <!-- row 4 -->
         <div class="not-hover ps-2 pe-2">
-          <div class="row">
+          <div class="row g-5">
             <div
               class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos="flip-up"
             >
-              <div class="wrapper">
-                <div class="pin-new pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--new">
                   <p>Mới Nhất</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/rb.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">RUBY</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="card-title course__title">RUBY</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
-
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1508,52 +1338,37 @@
                 </div>
               </div>
             </div>
+
             <div
               class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos="flip-up"
             >
-              <div class="wrapper">
-                <div class="cards">
-                  <div class="CardImgKh">
+              <div class="course__wrapper">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/reactjsps.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">REACTJS</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="card-title course__title">REACTJS</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
-
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1568,55 +1383,40 @@
                 </div>
               </div>
             </div>
+
             <div
               class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos="flip-up"
             >
-              <div class="wrapper">
-                <div class="pin-hot pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--trend">
                   <p>Xu Hướng</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/app3d.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">MOBILE APP</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="card-title course__title">MOBILE APP</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #f7f7f7"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #f7f7f7"></i>
                       </p>
                     </div>
-
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1631,55 +1431,40 @@
                 </div>
               </div>
             </div>
+
             <div
               class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5"
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos="flip-up"
             >
-              <div class="wrapper">
-                <div class="pin-trend pin">
+              <div class="course__wrapper">
+                <div class="course__pin course__pin--hot">
                   <p>Nổi Bật</p>
                 </div>
-                <div class="cards">
-                  <div class="CardImgKh">
+                <div class="course__card">
+                  <div class="course__img">
                     <img
-                      class="card-img-top ImgKh"
+                      class="card-img-top course__img"
                       src="img/phpps.png"
                       alt="hình"
                     />
                   </div>
-                  <div class="card-body CardBodyKH">
-                    <h3 class="card-title CardTitleKh">PHP</h3>
-
-                    <div class="value">
+                  <div class="course__body">
+                    <h3 class="card-title course__title">PHP</h3>
+                    <div class="course__value">
                       <p><i class="fas fa-clock fa-lg"></i> : 300 bài học</p>
                       <p>
-                        Đánh Giá :<i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i
-                        ><i
-                          class="fa-solid fa-star fa-"
-                          style="color: #ffe100"
-                        ></i>
+                        Đánh Giá :
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
+                        <i class="fa-solid fa-star" style="color: #ffe100"></i>
                       </p>
                     </div>
-
                     <div class="d-flex">
-                      <a href="htmls/videos.html" class="btn LearnBtn"
+                      <a href="htmls/videos.html" class="btn course__learn-btn"
                         >HỌC MIỄN PHÍ</a
                       >
                       <p>
@@ -1696,6 +1481,7 @@
             </div>
           </div>
         </div>
+
         <div class="page123">
           <ul>
             <li><a href="#">&lt;</a></li>
@@ -1839,55 +1625,58 @@
 
     <!-- footer -->
 
-    <footer>
-      <div class="container-fluid footer mt-5">
-        <div class="row m-0 ps-5 pe-5">
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-5">
-            <div class="box1">
-              <h2>liên hệ</h2>
+    <footer class="footer mt-5">
+      <div class="footer__container container-fluid">
+        <div class="footer__row row m-0 ps-5 pe-5">
+          <div
+            class="footer__col col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt-5"
+          >
+            <div class="footer__box footer__box--contact">
+              <h2 class="footer__title">liên hệ</h2>
 
-              <div id="box1-title">
-                <a class="footer-items" href="#"> Võ Nguyễn Đại Hiếu</a>
-
-                <a class="footer-items" href="#"
-                  ><i class="fa-solid fa-envelopes-bulk fa-xl"></i>
-                  vndhieuak@gmail.com</a
-                >
-
-                <a class="footer-items" href="#"
-                  ><i class="fa-solid fa-address-book fa-xl"></i> +8411735883</a
-                >
+              <div class="footer__box-title">
+                <a class="footer__item" href="#"> Võ Nguyễn Đại Hiếu</a>
+                <a class="footer__item" href="#">
+                  <i class="fa-solid fa-envelopes-bulk fa-xl"></i>
+                  vndhieuak@gmail.com
+                </a>
+                <a class="footer__item" href="#">
+                  <i class="fa-solid fa-address-book fa-xl"></i> +8411735883
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12 mt-5">
-            <div class="box2">
-              <h2>group</h2>
 
-              <div id="box2-title">
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-facebook-f"></i> facebook</a
-                >
+          <div
+            class="footer__col col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12 mt-5"
+          >
+            <div class="footer__box footer__box--group">
+              <h2 class="footer__title">group</h2>
 
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-twitter"></i> twitter</a
-                >
-
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-instagram"></i> instagram</a
-                >
-
-                <a class="footer-items" href="#"
-                  ><i class="fab fa-youtube"></i> youtube</a
-                >
+              <div class="footer__box-title">
+                <a class="footer__item" href="#">
+                  <i class="fab fa-facebook-f"></i> facebook
+                </a>
+                <a class="footer__item" href="#">
+                  <i class="fab fa-twitter"></i> twitter
+                </a>
+                <a class="footer__item" href="#">
+                  <i class="fab fa-instagram"></i> instagram
+                </a>
+                <a class="footer__item" href="#">
+                  <i class="fab fa-youtube"></i> youtube
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 mt-5">
-            <h2>Địa chỉ</h2>
-            <div class="wrapper-map">
+
+          <div
+            class="footer__col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 mt-5"
+          >
+            <h2 class="footer__title">Địa chỉ</h2>
+            <div class="footer__map-wrapper">
               <iframe
-                class="gg-map"
+                class="footer__map gg-map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7715033490863!2d108.21084937491717!3d16.077342784603367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142184792140755%3A0xd4058cb259787dac!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgUGjhuqFtIEvhu7kgdGh14bqtdCAtIMSQ4bqhaSBo4buNYyDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1715849086904!5m2!1svi!2s"
                 style="border: 0"
                 allowfullscreen=""
@@ -1896,46 +1685,60 @@
               ></iframe>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
-            <h2>phản hồi</h2>
-            <div class="box3">
-              <p>
+
+          <div
+            class="footer__col col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 mt-5"
+          >
+            <h2 class="footer__title">phản hồi</h2>
+            <div class="footer__box footer__box--feedback">
+              <p class="footer__feedback-message">
                 Hãy gửi phản hồi cho chúng tôi để hoàn thiện trang wed trong
                 khoản thời gian sớm nhất bạn nhé
               </p>
 
-              <form action="">
-                <div class="mess">
-                  <label for="mess">TIN NHẮN</label>
+              <form class="footer__feedback-form" action="">
+                <div class="footer__form-group">
+                  <label class="footer__form-label" for="mess">TIN NHẮN</label>
                   <input
+                    class="footer__form-input"
                     type="text"
-                    name=""
                     id="mess"
                     placeholder="Nhập lời nhắn...."
                     required
                   />
                 </div>
-                <div class="email">
-                  <label for="mail">Email</label>
+                <div class="footer__form-group">
+                  <label class="footer__form-label" for="mail">Email</label>
                   <input
+                    class="footer__form-input"
                     type="email"
-                    name=""
                     id="mail"
                     placeholder="Email phản hồi...."
                     required
                   />
                 </div>
-                <div class="footer-btn">
-                  <input type="submit" value="gửi" />
-                  <input type="reset" value="xóa" />
+                <div class="footer__form-btns">
+                  <input
+                    class="footer__btn footer__btn--submit"
+                    type="submit"
+                    value="gửi"
+                  />
+                  <input
+                    class="footer__btn footer__btn--reset"
+                    type="reset"
+                    value="xóa"
+                  />
                 </div>
               </form>
             </div>
           </div>
-          <div><p class="author mt-2">Thiết kế bởi: HIẾU VÕ</p></div>
+        </div>
+        <div class="footer__author">
+          <p class="author mt-2">Thiết kế bởi: HIẾU VÕ</p>
         </div>
       </div>
     </footer>
+
     <canvas id="canvas"></canvas>
     <div id="load"></div>
     <script src="js/mouse.js"></script>

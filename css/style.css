@@ -12,6 +12,9 @@
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%; /* 1rem = 16px */
+}
 /*  */
 :root {
   --comment-color: #cbcaca;
@@ -37,49 +40,52 @@
 /* 
 slide home
 */
-/* dk ,dn */
-.form #js-dk,
-form #js-dn {
-  font-size: 16px;
+/* slide home */
+/* Đăng ký, Đăng nhập */
+.slide-home__btn {
+  font-size: 1.6rem;
 }
-#js-dk:hover,
-#js-dn:hover {
+
+.slide-home__btn:hover {
   color: #000000;
 }
-/* đăng kí đăng nhập */
-/*  */
-.site-title {
-  padding: 100px 0;
+
+/* Tiêu đề slide home */
+.slide-home__title {
+  padding: 10px 0;
   font-weight: 500;
 }
-.site-title .title-text {
+
+.slide-home__title-text {
   font-family: chudep;
+  font-size: 2.5rem;
   animation: qualai2 2s infinite alternate ease-out;
 }
-.site-title .title-text1::after {
+
+.slide-home__title-text--1::after {
   content: "";
   height: 8px;
   width: 300px;
   margin-left: 20px;
   background: rgb(255, 0, 238);
   display: inline-block;
-  /* canh theo chiều y */
-  transform: translateY(-5px);
-  /* animation */
+  transform: translateY(-0.5rem);
 }
-.site-title .title-text2 {
+
+.slide-home__title-text--2 {
   text-align: right;
 }
-.site-title .title-text2::before {
+
+.slide-home__title-text--2::before {
   content: "";
   height: 8px;
   width: 200px;
-  margin-right: 20px;
+  margin-right: 2rem;
   background: rgb(255, 0, 238);
   display: inline-block;
-  /* canh theo chiều y */
-  transform: translateY(-5px);
+  transform: translateY(-0.5rem);
 }
+
 @keyframes qualai2 {
   50% {
     padding-left: 20px;
@@ -88,53 +94,64 @@ form #js-dn {
     padding-right: 20px;
   }
 }
-.site-title .box-note {
+
+.slide-home__box-note {
   display: flex;
   align-items: center;
-  height: 130px;
+  height: 13rem;
 }
-.site-title .box-note h1 {
-  font: 900 70px "chudep";
+
+.slide-home__box-note h1 {
+  font: 5rem "chudep";
   animation: qualai 2s infinite alternate;
 }
+
 @keyframes qualai {
   50% {
-    padding-right: 40px;
+    padding-right: 4rem;
   }
   100% {
-    padding-left: 40px;
+    padding-left: 4rem;
   }
 }
-.button-home form {
-  margin-left: 20px;
+
+.slide-home__button-home form {
+  margin-left: 2rem;
   justify-content: left;
 }
-.button-home form a {
+
+.slide-home__button-home form a {
   color: white;
 }
-.button-home button:hover {
+
+.slide-home__button-home button:hover {
   color: rgb(0, 0, 0);
 }
-/*  end slide home*/
+
+/* end slide home */
 /* line 1 */
-.banner-image {
+.slide-home__banner {
   margin: auto 0;
-  filter: drop-shadow(0 0 10px #0093e9);
+  filter: drop-shadow(0 0 1rem #0093e9);
 }
-.img-home {
+
+.slide-home__img {
   width: 100%;
 }
+
 .line1 {
-  height: 5px;
+  height: 0.5rem;
   width: 80%;
   background-color: #003cff;
   display: block; /* Đảm bảo phần tử chiếm toàn bộ chiều ngang của dòng */
   margin: 0 auto; /* Căng giữa theo chiều ngang */
 }
+
 .home {
-  box-shadow: -4px 20px 40px 0px #7ea0da;
+  box-shadow: -0.4rem 2rem 4rem 0px #7ea0da;
 }
-/* end line 1 */
+
+/* end  */
 
 /* <<<<<<<<<<<<<<<< begin nav and slider>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .container {
@@ -174,6 +191,9 @@ form #js-dn {
   background-color: #0093e9;
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   color: black;
+}
+.dropdown-menu .dropdown-item {
+  font-size: 1.6rem;
 }
 .navbar-nav {
   font-weight: 600;
@@ -381,7 +401,7 @@ header {
     transform: rotate(-30deg);
   }
 }
-/* giới thiệu */
+/* giới thiệu teacher */
 .infor-teacher {
   text-align: center;
   margin: 0 auto;
@@ -457,29 +477,35 @@ header {
   border: 1px solid rgb(255, 0, 0);
 }
 /* end giới thiệu */
+
+/* ---------------teacher --------------------- */
 /* mấy thầy dạy */
-.team-item {
+.infor-teacher__member-item {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3s ease;
   height: 100%;
 }
-.team-img {
+
+.infor-teacher__member-img-wrapper {
   position: relative;
   height: 350px;
 }
-.team-img-teacher {
+
+.infor-teacher__member-img {
   height: 350px;
   overflow: hidden;
 }
-.team-img img {
+
+.infor-teacher__member-img img {
   object-fit: cover;
   height: 100%;
   width: 100%;
   transition: all 0.3s ease;
 }
-.team-icon {
+
+.infor-teacher__member-social-icons {
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -489,7 +515,8 @@ header {
   opacity: 0;
   transition: opacity 0.3s ease, bottom 0.5s ease;
 }
-.team-icon i {
+
+.infor-teacher__member-social-icons i {
   background-color: #00aaff;
   color: #fff;
   border-radius: 50%;
@@ -501,30 +528,37 @@ header {
   font-size: 18px;
   transition: background-color 0.3s ease;
 }
-.team-icon i:hover {
+
+.infor-teacher__member-social-icons i:hover {
   background-color: #0077cc;
 }
-.team-content {
+
+.infor-teacher__member-info {
   padding: 20px;
   text-align: center;
   background-color: #fff;
 }
-.team-content h5 {
+
+.infor-teacher__member-name {
   font-size: 20px;
   font-weight: bold;
 }
-.team-content p {
+
+.infor-teacher__member-position {
   font: 700 25px chudep;
   color: #000000;
 }
-.team-item:hover .team-img img {
+
+.infor-teacher__member-item:hover .infor-teacher__member-img img {
   transform: scale(1.1);
   filter: brightness(0.5);
 }
-.team-item:hover .team-icon {
+
+.infor-teacher__member-item:hover .infor-teacher__member-social-icons {
   opacity: 1;
   animation: slideIn 0.5s forwards;
 }
+
 @keyframes slideIn {
   from {
     bottom: 0px;
@@ -533,61 +567,73 @@ header {
     bottom: 30px;
   }
 }
-.team-content h5,
-.team-content p {
+
+.infor-teacher__member-name,
+.infor-teacher__member-position {
   transition: all 0.3s ease;
 }
-.team-item:hover .team-content h5 {
+
+.infor-teacher__member-item:hover .infor-teacher__member-name {
   color: #ff6f61;
 }
-.team-item:hover .team-content p {
+
+.infor-teacher__member-item:hover .infor-teacher__member-position {
   color: #00aaff;
 }
 
+/* ----------------------------end--------------------------- */
+
 /* begin thông báo */
+/* ---------------------------------------begin lập trình là gì ?----------------- */
 .dev {
   overflow: hidden;
 }
-.dev-img {
+
+.dev__image {
   display: flex;
   justify-content: center;
 }
-.dev-img img {
+
+.dev__image img {
   width: 100%;
   object-fit: contain;
-  /* background-size: cover; */
 }
+
 /* 3 cái icon nhỏ */
-.frame-dev-title .small2 {
+.dev__frame-title .dev__image-small--2 {
   position: absolute;
   top: 20%;
   left: -5%;
   width: 90px;
   opacity: 0.7;
 }
-.frame-dev-title .small3 {
+
+.dev__frame-title .dev__image-small--3 {
   position: absolute;
   right: 10%;
   top: 25%;
   width: 70px;
   opacity: 0.8;
 }
-.frame-dev-title .small6 {
+
+.dev__frame-title .dev__image-small--6 {
   position: absolute;
   bottom: 0%;
   right: 30%;
   opacity: 0.5;
   width: 200px;
 }
-.frame-dev-title .small7 {
+
+.dev__frame-title .dev__image-small--7 {
   position: absolute;
   top: 5%;
   right: 50%;
   opacity: 0.5;
   width: 100px;
 }
-/* đoạn 2 */
-.frame-dev-title .small4 {
+
+/* Đoạn 2 */
+.dev__frame-title .dev__image-small--4 {
   position: absolute;
   bottom: 0%;
   left: 0%;
@@ -595,28 +641,31 @@ header {
   width: 250px;
 }
 
-.frame-dev-title .small8 {
+.dev__frame-title .dev__image-small--8 {
   position: absolute;
   top: 15%;
   right: 50%;
   opacity: 0.5;
   width: 100px;
 }
-.frame-dev-title .small9 {
+
+.dev__frame-title .dev__image-small--9 {
   position: absolute;
   bottom: 25%;
   right: 35%;
   opacity: 0.5;
   width: 100px;
 }
-.frame-dev-title .small10 {
+
+.dev__frame-title .dev__image-small--10 {
   position: absolute;
   bottom: 15%;
   right: 0%;
   opacity: 0.5;
   width: 150px;
 }
-.frame-dev-title .small11 {
+
+.dev__frame-title .dev__image-small--11 {
   position: absolute;
   bottom: 0;
   right: -20px;
@@ -624,7 +673,7 @@ header {
   width: 50px;
 }
 
-.frame-dev-title {
+.dev__frame-title {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -632,76 +681,99 @@ header {
   gap: 20px;
   margin: 20px;
 }
-.frame-dev-title .p {
-  font-size: 20px;
+.dev__frame-title .dev__subtitle {
+  font-size: 2rem;
+}
+.dev__frame-title p {
+  font-size: 1.5rem;
 }
 
-/*begin lộ trình học lập trình  */
-.lotrinh h2 {
+/* ----------------------------------------end lập trình là gì ---------------------------------- */
+/*------------------------------------------begin lộ trình học lập trình------------------------------  */
+.learning-path__title {
   font-style: italic;
   font-weight: bold;
   color: #0077ff;
 }
-.lotrinh .card-lt {
-  border: 0px;
+
+.learning-path__card {
+  border: 0; /* Xóa viền của thẻ card */
 }
-.lotrinh .card-body {
-  text-align: center;
+
+.learning-path__card-body {
+  text-align: center; /* Căn giữa nội dung thẻ body */
 }
-.lotrinh .box-lt .num {
+
+.learning-path__box .learning-path__num {
   background-image: linear-gradient(90deg, #2c31cf, #b44fff);
   display: inline-block;
-  font-size: 20px;
+  font-size: 2rem; /* Điều chỉnh đơn vị sang rem */
   color: white;
-  height: 30px;
-  width: 30px;
+  height: 3rem; /* Điều chỉnh đơn vị sang rem */
+  width: 3rem; /* Điều chỉnh đơn vị sang rem */
   text-align: center;
   border-radius: 50%;
 }
-.lotrinh .box-lt .card-title {
+
+.learning-path__box .learning-path__card-title {
   font-family: chudepdam;
+  font-size: 2.5rem;
 }
-.lotrinh .box-lt {
+.learning-path__box .learning-path__card-text {
+  font-size: 1.6rem;
+}
+.learning-path__box {
   font-weight: 500;
   color: #4c4c4c;
 }
-.lotrinh .box-lt img {
+
+.learning-path__box img {
   animation: bigsmall 4s infinite alternate ease-out;
 }
-.lotrinh .box-lt .b1,
-.lotrinh .box-lt .b2,
-.lotrinh .box-lt .b3,
-.lotrinh .box-lt .b4 {
+
+.learning-path__box .learning-path__card-body--1,
+.learning-path__box .learning-path__card-body--2,
+.learning-path__box .learning-path__card-body--3,
+.learning-path__box .learning-path__card-body--4 {
   animation: buoc1234 2s infinite alternate ease-in;
 }
-.lotrinh .box-lt .b2 {
-  animation-delay: 0.5s;
+
+.learning-path__box .learning-path__card-body--2 {
+  animation-delay: 0.5s; /* Đặt độ trễ cho phần tử thứ 2 */
 }
-.lotrinh .box-lt .b3 {
-  animation-delay: 1s;
+
+.learning-path__box .learning-path__card-body--3 {
+  animation-delay: 1s; /* Đặt độ trễ cho phần tử thứ 3 */
 }
-.lotrinh .box-lt .b4 {
-  animation-delay: 1.5s;
+
+.learning-path__box .learning-path__card-body--4 {
+  animation-delay: 1.5s; /* Đặt độ trễ cho phần tử thứ 4 */
 }
+
 @keyframes buoc1234 {
   100% {
-    color: #8000ff;
+    color: #8000ff; /* Chuyển đổi màu sắc cho hiệu ứng */
   }
 }
-/* tạo hiệu ứng chạy từng bước bằng delay  */
-/*end lộ trình học lập trình  */
+
+/* Tạo hiệu ứng chạy từng bước bằng delay */
+
+/*-----------------------------------------end lộ trình học lập trình ------------------------------------------ */
 
 /*<<<<<<<<<<<<<<<<<< begin khóa học>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .card-group {
   padding: 10px 0;
 }
+
 .row {
   overflow: visible;
 }
-.course .wrapper {
+
+.course__wrapper {
   position: relative;
 }
-.wrapper .pin {
+
+.course__wrapper .course__pin {
   position: absolute;
   top: 0;
   left: 15px;
@@ -712,12 +784,14 @@ header {
   justify-content: center;
   align-items: center;
 }
-.wrapper .pin p {
+
+.course__wrapper .course__pin p {
   font-weight: 700;
   color: white;
   font-size: 15px;
 }
-.wrapper .pin-hot {
+
+.course__wrapper .course__pin--hot {
   background-image: linear-gradient(
     0deg,
     #c0ca04 0%,
@@ -726,27 +800,31 @@ header {
   );
   clip-path: polygon(99% 0, 100% 75%, 53% 100%, 0 75%, 0 0);
 }
-.wrapper .pin-new {
+
+.course__wrapper .course__pin--new {
   clip-path: polygon(99% 0, 100% 75%, 53% 100%, 0 75%, 0 0);
   background-image: linear-gradient(0deg, #02ff41 0%, #009405 100%);
 }
-.wrapper .pin-trend {
+
+.course__wrapper .course__pin--trend {
   clip-path: polygon(0 1%, 100% 0, 100% 75%, 0 100%);
   background-image: linear-gradient(0deg, #c7e2e6 0%, #ff00f2 100%);
 }
-/* gắn nổi bật cho khóa học */
-/* */
+
+/* Gắn nổi bật cho khóa học */
 .course {
   position: relative;
   overflow: hidden;
 }
-.course-bgr {
+
+.course__bgr {
   position: absolute;
   z-index: -1;
   opacity: 0.2;
   width: auto;
 }
-/* list skill */
+
+/* List skill */
 .skill h3 {
   text-align: center;
   margin-bottom: 2rem;
@@ -755,35 +833,41 @@ header {
   text-transform: capitalize;
   padding: 1rem 0;
 }
+
 .list-skill {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .list-skill .skill-items {
   display: flex;
 }
+
 .skill-items h5 {
   font-weight: 700;
   text-transform: capitalize;
 }
+
 .skill-items i {
   margin: 10px 10px 0 0;
 }
-/* end  */
-/* tiêu đề khóa học */
+
+/* Tiêu đề khóa học */
 .container-title {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* begin mấy ô khóa học */
-.CardTextKh {
+
+/* Begin mấy ô khóa học */
+.course__card-text {
   /* overflow: hidden;
   -webkit-line-clamp: 7;
-    -webkit-box-orient: vertical;
-    display: -webkit-box; */
+  -webkit-box-orient: vertical;
+  display: -webkit-box; */
 }
+
 @keyframes bigsmall {
   0% {
     transform: scale(1); /* Kích thước ban đầu */
@@ -795,28 +879,31 @@ header {
     transform: scale(1); /* Thu nhỏ */
   }
 }
-.CardImgKh {
+
+.course__img {
   overflow: hidden;
-  height: 250px;
+  height: 200px;
 }
-.ImgKh {
+
+.course__img .ImgKh {
   object-fit: cover;
   animation: bigsmall 5s infinite alternate;
   width: 100%;
   height: 100%;
 }
-.wrapper:hover {
+
+.course__wrapper:hover {
   box-shadow: rgb(58, 56, 56) 0px 2px 5px 2px;
   transform: scale(1.02);
-
   cursor: pointer;
 }
-.not-hover:hover .wrapper:not(:hover) {
+
+.not-hover:hover .course__wrapper:not(:hover) {
   transform: scale(0.95);
   filter: brightness(90%) blur(0.5px);
 }
-.course .wrapper {
-  /* height: 600px; */
+
+.course__wrapper {
   overflow: hidden;
   border-radius: 20px;
   transition: 0.5s ease;
@@ -830,17 +917,20 @@ header {
   );
 }
 
-.CardBodyKH {
+.course__body {
   margin: 10px;
 }
-.CardBodyKH .value {
+
+.course__body .course__value {
   margin-left: 10px;
 }
-.CardBodyKH .value p {
+
+.course__body .course__value p {
   text-align: left;
   font-size: 18px;
 }
-.LearnBtn {
+
+.course__learn-btn {
   padding: 5px 8px;
   border: 2px solid;
   border-radius: 10px;
@@ -849,30 +939,33 @@ header {
   background-color: #00c1f7;
   transition: all 0.5s;
 }
-.LearnBtn:hover {
+
+.course__learn-btn:hover {
   transform: scale(110%);
   border-radius: 10px;
-  /* font-size: 20px; */
   font-weight: 700;
   color: #ffffff;
   background-color: #0242d9;
 }
-.CardBodyKH .d-flex {
+
+.course__body .d-flex {
   position: relative;
 }
-.CardBodyKH .d-flex p {
+
+.course__body .d-flex p {
   position: absolute;
   bottom: -10px;
   right: 0;
   font-size: 15px;
 }
-.CardTitleKh {
+
+.course__title {
   color: rgb(0, 0, 0);
   font: 700 20px Georgia, "Times New Roman", Times, serif;
   text-align: center;
   text-shadow: 3px 3px 5px rgb(248, 254, 76);
 }
-.course
+
 /* khóa nâng cao */
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<end khóa học>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* 
@@ -991,7 +1084,7 @@ page
   color: white;
 }
 .CardType1 .pin-news {
-  clip-path: polygon(100% 0, 0 0, 0 100%);  
+  clip-path: polygon(100% 0, 0 0, 0 100%);
   width: 80px;
   height: 80px;
   background-image: linear-gradient(0deg, #d25800 0%, #c62a2a 100%);
@@ -1341,7 +1434,7 @@ a {
   text-align: right;
 }
 
-/* footer */
+/* --------------------------------------begin footer-------------------------- */
 
 .footer {
   background-image: linear-gradient(
@@ -1357,38 +1450,39 @@ a {
   animation: chuyenmau 5s linear infinite;
   text-transform: capitalize;
 }
-.footer h2 {
+
+.footer__title {
   font: 700 30px "Times New Roman", Times, serif;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.box3 p {
+.footer__box--feedback p {
   font-size: 20px;
   text-align: justify;
 }
-#box1-title a,
-#box2-title a {
+
+.footer__box-title a {
   letter-spacing: 2px;
 }
-.box3 form {
+
+.footer__box--feedback form {
   display: block;
 }
-.box3 .mess input {
+
+.footer__form-group .footer__form-input {
   width: 100%;
   height: 50px;
   border-radius: 10px;
   padding-left: 10px;
 }
-.box3 .email input {
-  width: 100%;
+
+.footer__form-group .footer__form-input[type="email"] {
   border-radius: 5px;
-  padding-left: 10px;
 }
-.author {
-  text-align: center;
-  font: 700 30px "chudepdam";
+
+.footer__author {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -1400,10 +1494,13 @@ a {
     #2fff00 100%
   );
   background-clip: text;
-  /* trong xuốt chữ để ở trên mình xài màu chuyển sắc */
   color: transparent;
 }
-.footer-btn input {
+.footer__author p {
+  font: 700 3rem "chudepdam";
+}
+
+.footer__form-btns .footer__btn {
   font-size: 15px;
   background-color: rgb(26, 167, 232);
   text-transform: uppercase;
@@ -1413,25 +1510,26 @@ a {
   color: white;
   border-radius: 10px;
 }
-.footer-btn input:hover {
+
+.footer__form-btns .footer__btn:hover {
   transform: scale(115%);
   background-color: #0242d9;
 }
-.footer-items {
+
+.footer__item {
   display: block;
   font-size: 15px;
   transition: all 0.3s;
   position: relative;
 }
-.footer-items:hover {
+
+.footer__item:hover {
   transform: scale(115%);
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
-.footer-items:hover::before {
-  display: block;
-}
-.footer-items::before {
+
+.footer__item::before {
   content: "";
   height: 10px;
   width: 10px;
@@ -1442,17 +1540,27 @@ a {
   clip-path: polygon(0 3%, 100% 50%, 0 100%, 44% 53%);
   display: none;
 }
-.footer-items i {
+.author {
+}
+
+.footer__item:hover::before {
+  display: block;
+}
+
+.footer__item i {
   font-size: 20px;
 }
-/* google map */
-.wrapper-map {
+
+/* Google map */
+.footer__map-wrapper {
 }
-.gg-map {
+
+.footer__map {
   width: 100%;
   height: 250px;
 }
 
+/* --------------------------------------end footer-------------------------- */
 /* hiệu ứng chuột */
 #canvas {
   position: fixed;
@@ -1463,6 +1571,7 @@ a {
   height: 100%;
   /* pointer-events: none; */
 }
+
 /*  ghi đè phần nav */
 .navbar {
   z-index: 999;

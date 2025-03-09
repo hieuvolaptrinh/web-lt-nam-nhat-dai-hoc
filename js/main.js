@@ -21,7 +21,7 @@ function closeDk() {
 }
 // nổi bọt
 formDn.addEventListener("click", function (event) {
-  event.stopPropagation(); // ngăn chặn sự kiện "click" tiếp tục lan truyền lên các phần tử cha của phần tử hiện tại.
+  event.stopPropagation(); 
 });
 formDk.addEventListener("click", function (event) {
   event.stopPropagation();
@@ -33,7 +33,7 @@ let titles = document.querySelectorAll(".note-title");
 function loadtext() {
   titles.forEach(function (title) {
     const text = title.textContent;
-    title.textContent = ""; // gắn nội dung trống sau đó mình thêm từng chữ vào
+    title.textContent = ""; 
     let index = 0;
     let intervalId;
     function typeEffect() {
